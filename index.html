@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infiniti Group | Real Assets. Global Vision.</title>
+    <meta name="description" content="Desarrollamos proyectos de alto valor en hospitalidad, salud, real estate y agroindustria, integrando tecnología blockchain para crear nuevas formas de participación en activos del mundo real.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- LOADING SCREEN -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">INFINITI</div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">INFINITI GROUP</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#ecosystem">Ecosistema</a></li>
+                <li><a href="#developments">Desarrollos</a></li>
+                <li><a href="#blockchain">Blockchain</a></li>
+                <li><a href="#platform">Plataforma</a></li>
+                <li><a href="#token-faq">Token FAQ</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="nav-cta magnetic">Acceder</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/HOSPITAL/EXTERIOR LEJOS.png" alt="Infiniti Group" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow" data-animate="fade-up" data-delay="0.3">Real Assets. Global Vision.</p>
+            <h1 class="hero-title" data-animate="split-text">Infiniti Group</h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="0.8">Desarrollamos proyectos de alto valor en hospitalidad, salud, real estate y agroindustria, integrando tecnología blockchain para crear nuevas formas de participación en activos del mundo real.</p>
+            <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-primary magnetic" data-animate="fade-up" data-delay="1.1">Acceder a la plataforma</a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: QUIÉNES SOMOS -->
+    <section class="section section-about" id="about">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-label">
+                    <span class="label-number" data-animate="counter" data-target="01">01</span>
+                    <span class="label-text">Quiénes Somos</span>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title" data-animate="reveal-text">Una nueva generación de desarrolladores globales</h2>
+                    <p class="section-text" data-animate="fade-up">Infiniti Group es una firma enfocada en el desarrollo de proyectos premium en sectores estratégicos como hospitalidad, salud, turismo, agricultura y real estate internacional.</p>
+                    <p class="section-text" data-animate="fade-up">Nuestro enfoque combina arquitectura de alto nivel, selección estratégica de ubicaciones y modelos innovadores de acceso a activos del mundo real.</p>
+                    <div class="pillars">
+                        <div class="pillar" data-animate="fade-up" data-delay="0">
+                            <div class="pillar-line"></div>
+                            <h3>Diseño y experiencia premium</h3>
+                            <p>Cada proyecto refleja estándares de diseño arquitectónico de primer nivel mundial.</p>
+                        </div>
+                        <div class="pillar" data-animate="fade-up" data-delay="0.15">
+                            <div class="pillar-line"></div>
+                            <h3>Activos reales con valor estructural</h3>
+                            <p>Desarrollos físicos respaldados por ubicaciones estratégicas y demanda real.</p>
+                        </div>
+                        <div class="pillar" data-animate="fade-up" data-delay="0.3">
+                            <div class="pillar-line"></div>
+                            <h3>Integración tecnológica mediante blockchain</h3>
+                            <p>Conectamos desarrollos físicos con infraestructura digital de participación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: ECOSISTEMA INFINITI -->
+    <section class="section section-ecosystem" id="ecosystem">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-label">
+                    <span class="label-number">02</span>
+                    <span class="label-text">Ecosistema</span>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title" data-animate="reveal-text">Un ecosistema global de activos</h2>
+                    <p class="section-text" data-animate="fade-up">Infiniti Group desarrolla proyectos en distintos sectores que comparten una misma filosofía: crear activos de alta calidad con una propuesta de valor sólida y una experiencia diferenciada.</p>
+                    <div class="ecosystem-grid">
+                        <div class="eco-card" data-animate="fade-up" data-delay="0">
+                            <div class="eco-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+                            </div>
+                            <h3>Turismo de lujo</h3>
+                        </div>
+                        <div class="eco-card" data-animate="fade-up" data-delay="0.1">
+                            <div class="eco-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            </div>
+                            <h3>Medicina estética</h3>
+                        </div>
+                        <div class="eco-card" data-animate="fade-up" data-delay="0.2">
+                            <div class="eco-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <h3>Salud hospitalaria</h3>
+                        </div>
+                        <div class="eco-card" data-animate="fade-up" data-delay="0.3">
+                            <div class="eco-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                            </div>
+                            <h3>Real estate internacional</h3>
+                        </div>
+                        <div class="eco-card" data-animate="fade-up" data-delay="0.4">
+                            <div class="eco-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <h3>Agroindustria productiva</h3>
+                        </div>
+                        <div class="eco-card" data-animate="fade-up" data-delay="0.5">
+                            <div class="eco-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                            <h3>Hospitalidad y experiencias</h3>
+                        </div>
+                    </div>
+                    <p class="section-text section-text-muted" data-animate="fade-up">Cada proyecto es desarrollado con visión a largo plazo, diseño arquitectónico de alto nivel y una estrategia global de crecimiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: NUESTROS DESARROLLOS -->
+    <section class="section section-developments" id="developments">
+        <div class="container">
+            <div class="section-header-centered">
+                <span class="label-number">03</span>
+                <h2 class="section-title-large" data-animate="reveal-text">Nuestros Desarrollos</h2>
+                <p class="section-subtitle" data-animate="fade-up">Proyectos premium en ubicaciones estratégicas del mundo</p>
+            </div>
+
+            <!-- LUXURY CLINICS -->
+            <div class="dev-card" data-animate="fade-up" id="luxury-clinics">
+                <div class="dev-card-image">
+                    <div class="gallery" data-gallery="clinica">
+                        <div class="gallery-track">
+                            <div class="gallery-slide active"><img src="images/CLINICA/EXTERIOR.png" alt="Luxury Clinics Exterior" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/RECEPCIÓN.png" alt="Recepción" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/SALA DE ESPERA.png" alt="Sala de Espera" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/CONSULTORIO.png" alt="Consultorio" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/TRATAMIENTO.png" alt="Tratamiento" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/PASILLO.png" alt="Pasillo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/DOCTORA.png" alt="Doctora" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/MAQUINAS.png" alt="Equipamiento" loading="lazy"></div>
+                        </div>
+                        <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
+                        <div class="gallery-counter"><span class="gallery-current">1</span> / <span class="gallery-total">8</span></div>
+                    </div>
+                </div>
+                <div class="dev-card-content">
+                    <span class="dev-card-tag">Medicina Estética</span>
+                    <h3 class="dev-card-title">Luxury Clinics</h3>
+                    <p>Clínicas estéticas de alto lujo diseñadas para ofrecer una experiencia estética refinada en entornos cuidadosamente creados para brindar privacidad, confort y elegancia.</p>
+                    <p>Cada clínica funciona como un espacio boutique donde la arquitectura, los materiales nobles y una atmósfera sofisticada envuelven al paciente en una experiencia exclusiva.</p>
+                    <div class="dev-locations">
+                        <span>Ciudad de México</span>
+                        <span>Mérida</span>
+                        <span>Querétaro</span>
+                        <span>Florida</span>
+                        <span>Dubái</span>
+                    </div>
+                    <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-outline magnetic">Ver proyecto</a>
+                </div>
+            </div>
+
+            <!-- THE JUNGLE KUKULKÁN -->
+            <div class="dev-card dev-card-reverse" data-animate="fade-up" id="jungle-kukulkan">
+                <div class="dev-card-image">
+                    <div class="gallery" data-gallery="kukulkan">
+                        <div class="gallery-track">
+                            <div class="gallery-slide active"><img src="images/KUKULKAN/EXTERIOR.png" alt="The Jungle Kukulkán Exterior" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/GLAMPINGS AEREA.png" alt="Vista Aérea" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/RECEPCIÓN.png" alt="Recepción" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/HABITACIÓN.png" alt="Habitación" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/CAMA MATRIMONIAL.png" alt="Cama Matrimonial" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/SALA DE ESTAR.png" alt="Sala de Estar" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/JACUZZI.png" alt="Jacuzzi" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/BAÑO.png" alt="Baño" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/CAMINO.png" alt="Camino" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/DOS GLAMPINGS.png" alt="Dos Glampings" loading="lazy"></div>
+                        </div>
+                        <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
+                        <div class="gallery-counter"><span class="gallery-current">1</span> / <span class="gallery-total">10</span></div>
+                    </div>
+                </div>
+                <div class="dev-card-content">
+                    <span class="dev-card-tag">Hospitalidad</span>
+                    <h3 class="dev-card-title">The Jungle Kukulkán</h3>
+                    <p>Desarrollo exclusivo de 100 glampings de lujo ubicados en la selva de Mérida, Yucatán. Un santuario donde naturaleza, arquitectura y confort se integran para crear una experiencia única de descanso y conexión.</p>
+                    <div class="dev-features">
+                        <span>Diseño orgánico</span>
+                        <span>Privacidad absoluta</span>
+                        <span>Lujo contemporáneo</span>
+                        <span>Integración con la selva</span>
+                    </div>
+                    <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-outline magnetic">Ver proyecto</a>
+                </div>
+            </div>
+
+            <!-- HOSPITAL REAL DE ÁNGELES -->
+            <div class="dev-card" data-animate="fade-up" id="hospital-real">
+                <div class="dev-card-image">
+                    <div class="gallery" data-gallery="hospital">
+                        <div class="gallery-track">
+                            <div class="gallery-slide active"><img src="images/HOSPITAL/EXTERIOR.png" alt="Hospital Real de Ángeles" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/EXTERIOR LEJOS.png" alt="Vista Exterior" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/RECEPCIÓN.png" alt="Recepción" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/SALA DE ESPERA.png" alt="Sala de Espera" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/QUIROFANO.png" alt="Quirófano" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/HABITACIÓN.png" alt="Habitación" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/PEDIATRÍA.png" alt="Pediatría" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/DOCTORES.png" alt="Doctores" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/PASILLO-2.png" alt="Pasillo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/PACIENTE.png" alt="Paciente" loading="lazy"></div>
+                        </div>
+                        <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
+                        <div class="gallery-counter"><span class="gallery-current">1</span> / <span class="gallery-total">10</span></div>
+                    </div>
+                </div>
+                <div class="dev-card-content">
+                    <span class="dev-card-tag">Salud</span>
+                    <h3 class="dev-card-title">Hospital Real de Ángeles</h3>
+                    <p>Hospital privado de alta especialidad en Zacatecas. Integrará tecnología médica de vanguardia, infraestructura moderna y espacios diseñados para brindar una experiencia hospitalaria segura, cómoda y eficiente.</p>
+                    <div class="dev-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-animate="count-up" data-target="6">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Quirófanos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-animate="count-up" data-target="40">0</span>
+                            <span class="stat-label">Camas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-animate="count-up" data-target="40">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Especialidades</span>
+                        </div>
+                    </div>
+                    <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-outline magnetic">Ver proyecto</a>
+                </div>
+            </div>
+
+            <!-- AZIZI VENICE -->
+            <div class="dev-card dev-card-reverse" data-animate="fade-up" id="azizi-venice">
+                <div class="dev-card-image">
+                    <div class="gallery" data-gallery="azizi">
+                        <div class="gallery-track">
+                            <div class="gallery-slide active"><img src="images/azizi venice/EDIFICIO.png" alt="Azizi Venice Edificio" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/SALA.png" alt="Sala" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/COCINA.png" alt="Cocina" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/HABITACIÓN.png" alt="Habitación" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/BAÑO.png" alt="Baño" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/VESTIDOR.png" alt="Vestidor" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/GYM.png" alt="Gym" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/ALBERCA-2.png" alt="Alberca" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/SAUNA.png" alt="Sauna" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/MESA DE JUEGO.png" alt="Mesa de Juego" loading="lazy"></div>
+                        </div>
+                        <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
+                        <div class="gallery-counter"><span class="gallery-current">1</span> / <span class="gallery-total">10</span></div>
+                    </div>
+                </div>
+                <div class="dev-card-content">
+                    <span class="dev-card-tag">Real Estate</span>
+                    <h3 class="dev-card-title">Azizi Venice</h3>
+                    <p>Exclusivo proyecto residencial ubicado en Dubai South, diseñado como una comunidad inspirada en el agua. Combina arquitectura contemporánea con un estilo de vida tipo resort.</p>
+                    <div class="dev-features">
+                        <span>Departamentos de lujo</span>
+                        <span>Terrazas privadas</span>
+                        <span>Vistas a laguna</span>
+                        <span>Boulevard comercial</span>
+                        <span>Amenidades premium</span>
+                    </div>
+                    <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-outline magnetic">Ver proyecto</a>
+                </div>
+            </div>
+
+            <!-- MONTE VINUM -->
+            <div class="dev-card" data-animate="fade-up" id="monte-vinum">
+                <div class="dev-card-image">
+                    <div class="gallery" data-gallery="montevinum">
+                        <div class="gallery-track">
+                            <div class="gallery-slide active"><img src="images/MONTE VINUM/ENTRADA.png" alt="Monte Vinum Entrada" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/VIÑEDO.png" alt="Viñedo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/VIÑEDO PASILLOS.png" alt="Viñedo Pasillos" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/ECOLOFTS.png" alt="Ecolofts" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/RESTAURANTE-BAR.png" alt="Restaurante Bar" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/ALBERCA.png" alt="Alberca" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/BODA.png" alt="Boda" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/VINO.png" alt="Vino" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/UVAS.png" alt="Uvas" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/HUESPEDES.png" alt="Huéspedes" loading="lazy"></div>
+                        </div>
+                        <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
+                        <div class="gallery-counter"><span class="gallery-current">1</span> / <span class="gallery-total">10</span></div>
+                    </div>
+                </div>
+                <div class="dev-card-content">
+                    <span class="dev-card-tag">Turismo & Real Estate</span>
+                    <h3 class="dev-card-title">Monte Vinum</h3>
+                    <p>Desarrollo inmobiliario y turístico ubicado en el Valle de la Trinidad en Tequisquiapan, Querétaro. Un destino enológico, turístico y residencial de alto valor.</p>
+                    <div class="dev-features">
+                        <span>Viñedos productivos</span>
+                        <span>Residencias</span>
+                        <span>Ecolofts fraccional</span>
+                        <span>Glamping</span>
+                        <span>Restaurante bar</span>
+                        <span>Bodas destino</span>
+                    </div>
+                    <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-outline magnetic">Ver proyecto</a>
+                </div>
+            </div>
+
+            <!-- TOWN HOUSES PUERTO ÁNGEL -->
+            <div class="dev-card dev-card-reverse" data-animate="fade-up" id="townhouses-puerto">
+                <div class="dev-card-image">
+                    <div class="gallery" data-gallery="puerto">
+                        <div class="gallery-track">
+                            <div class="gallery-slide active"><img src="images/town houses puerto angel/VISTA PANORAMICA.png" alt="Vista Panorámica" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/VISTA FRONTAL.png" alt="Vista Frontal" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/ENTRADA.png" alt="Entrada" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/SALA.png" alt="Sala" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/RECAMARA.png" alt="Recámara" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/ALBERCA.png" alt="Alberca" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/SPA.png" alt="Spa" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/AMENIDADES.png" alt="Amenidades" loading="lazy"></div>
+                        </div>
+                        <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
+                        <div class="gallery-counter"><span class="gallery-current">1</span> / <span class="gallery-total">8</span></div>
+                    </div>
+                </div>
+                <div class="dev-card-content">
+                    <span class="dev-card-tag">Real Estate</span>
+                    <h3 class="dev-card-title">Town Houses Puerto Ángel</h3>
+                    <p>27 luxury townhouses ubicados en Puerto Ángel, Oaxaca. Diseñados para integrarse con el entorno natural del Pacífico mexicano, combinando arquitectura contemporánea con materiales nobles.</p>
+                    <div class="dev-features">
+                        <span>Vistas al mar</span>
+                        <span>Ventilación natural</span>
+                        <span>Privacidad</span>
+                        <span>Conexión con el entorno</span>
+                    </div>
+                    <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-outline magnetic">Ver proyecto</a>
+                </div>
+            </div>
+
+            <!-- CITRUS LIMONES -->
+            <div class="dev-card" data-animate="fade-up" id="citrus-limones">
+                <div class="dev-card-image">
+                    <div class="gallery" data-gallery="citrus">
+                        <div class="gallery-track">
+                            <div class="gallery-slide active"><img src="images/citrus limone/ENTRADA.png" alt="Citrus Limones" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/CAMPO 2.png" alt="Campo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/LIMÓN.png" alt="Limón" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/PASILLO.png" alt="Pasillo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/CANASTAS.png" alt="Canastas" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/PERSONAS.png" alt="Personas" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/CAMIÓN.png" alt="Camión" loading="lazy"></div>
+                        </div>
+                        <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
+                        <div class="gallery-counter"><span class="gallery-current">1</span> / <span class="gallery-total">7</span></div>
+                    </div>
+                </div>
+                <div class="dev-card-content">
+                    <span class="dev-card-tag">Agroindustria</span>
+                    <h3 class="dev-card-title">Citrus Limones</h3>
+                    <p>Proyecto agroproductivo enfocado en la explotación de hectáreas de limón en Mérida, Yucatán. Producción eficiente dentro de una de las regiones con mejores condiciones agrícolas de México.</p>
+                    <div class="dev-features">
+                        <span>Siembra tecnificada</span>
+                        <span>Riego optimizado</span>
+                        <span>Cuidado fitosanitario</span>
+                        <span>Cosecha optimizada</span>
+                    </div>
+                    <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-outline magnetic">Ver proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: TECNOLOGÍA BLOCKCHAIN -->
+    <section class="section section-blockchain" id="blockchain">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-label">
+                    <span class="label-number">04</span>
+                    <span class="label-text">Blockchain</span>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title" data-animate="reveal-text">Infraestructura digital para activos del mundo real</h2>
+                    <p class="section-text" data-animate="fade-up">Infiniti Group integra tecnología blockchain para conectar desarrollos físicos con infraestructura digital.</p>
+                    <p class="section-text" data-animate="fade-up">Mediante tokenización basada en el estándar ERC-20, ciertos proyectos pueden representarse digitalmente dentro de una red blockchain, permitiendo una estructura moderna de participación en activos reales.</p>
+                    <div class="blockchain-visual" data-animate="fade-up">
+                        <div class="chain-node">
+                            <div class="node-dot"></div>
+                            <span>Activo Real</span>
+                        </div>
+                        <div class="chain-line"></div>
+                        <div class="chain-node">
+                            <div class="node-dot"></div>
+                            <span>Smart Contract</span>
+                        </div>
+                        <div class="chain-line"></div>
+                        <div class="chain-node">
+                            <div class="node-dot"></div>
+                            <span>Token ERC-20</span>
+                        </div>
+                        <div class="chain-line"></div>
+                        <div class="chain-node">
+                            <div class="node-dot"></div>
+                            <span>Polygon Network</span>
+                        </div>
+                    </div>
+                    <p class="section-text section-text-muted" data-animate="fade-up">Estos tokens existen dentro de la red Polygon y son verificables públicamente en blockchain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: TOKEN DIGITAL INMOBILIARIO -->
+    <section class="section section-token" id="token">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-label">
+                    <span class="label-number">05</span>
+                    <span class="label-text">Token</span>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title" data-animate="reveal-text">Token Digital Inmobiliario</h2>
+                    <p class="section-text" data-animate="fade-up">El ecosistema digital de Infiniti Group utiliza tokens ERC-20 desplegados en la red Polygon. Cada token representa una participación privada dentro de un proyecto inmobiliario específico desarrollado por el grupo.</p>
+                    <div class="token-features">
+                        <div class="token-feature" data-animate="fade-up" data-delay="0">
+                            <div class="token-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 12h10M12 7v10"/></svg>
+                            </div>
+                            <h3>Token ERC-20 en blockchain</h3>
+                            <p>Estándar reconocido globalmente desplegado en la red Polygon.</p>
+                        </div>
+                        <div class="token-feature" data-animate="fade-up" data-delay="0.1">
+                            <div class="token-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <h3>Asociado a un activo real</h3>
+                            <p>Cada token está vinculado a un desarrollo inmobiliario específico.</p>
+                        </div>
+                        <div class="token-feature" data-animate="fade-up" data-delay="0.2">
+                            <div class="token-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </div>
+                            <h3>Custodiado en Smart Account</h3>
+                            <p>Custodia segura mediante tecnología de Account Abstraction.</p>
+                        </div>
+                        <div class="token-feature" data-animate="fade-up" data-delay="0.3">
+                            <div class="token-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            </div>
+                            <h3>Infraestructura Polygon</h3>
+                            <p>Red blockchain de alta velocidad y bajo costo transaccional.</p>
+                        </div>
+                    </div>
+                    <p class="section-text section-text-muted" data-animate="fade-up">Este modelo combina infraestructura blockchain con activos del mundo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: PLATAFORMA INFINITY LEGACY -->
+    <section class="section section-platform" id="platform">
+        <div class="platform-bg"></div>
+        <div class="container">
+            <div class="platform-content" data-animate="fade-up">
+                <span class="label-number">06</span>
+                <h2 class="platform-title">Accede a la plataforma</h2>
+                <p class="platform-text">Infinity Legacy es la plataforma digital donde se gestiona el ecosistema de tokens asociados a desarrollos del grupo.</p>
+                <div class="platform-features">
+                    <div class="platform-feature">
+                        <span class="platform-feature-bullet"></span>
+                        <span>Acceder a proyectos</span>
+                    </div>
+                    <div class="platform-feature">
+                        <span class="platform-feature-bullet"></span>
+                        <span>Visualizar tu participación</span>
+                    </div>
+                    <div class="platform-feature">
+                        <span class="platform-feature-bullet"></span>
+                        <span>Consultar información del proyecto</span>
+                    </div>
+                    <div class="platform-feature">
+                        <span class="platform-feature-bullet"></span>
+                        <span>Gestionar tokens en tu Smart Account</span>
+                    </div>
+                </div>
+                <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-primary btn-large magnetic">Acceder a la plataforma</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOKEN FAQ -->
+    <section class="section section-faq" id="token-faq">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-label">
+                    <span class="label-number">07</span>
+                    <span class="label-text">Token FAQ</span>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title" data-animate="reveal-text">Preguntas frecuentes sobre el Token</h2>
+
+                    <div class="faq-list">
+                        <div class="faq-item" data-animate="fade-up" data-delay="0">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>01. &iquest;Qué es este token?</span>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Este token es un token ERC-20 real desplegado en la red Polygon. Representa una participación privada en un desarrollo inmobiliario específico, otorgando al titular el derecho a recibir rendimientos fijos anuales derivados del proyecto en el que invierte.</p>
+                                <p>Aunque no esté listado en exchanges públicos, sigue siendo un token válido, existente y verificable en blockchain.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-animate="fade-up" data-delay="0.05">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>02. &iquest;Por qué sigue siendo un token aunque no esté listado?</span>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Un token se considera ERC-20 si existe un contrato inteligente en blockchain, cumple con el estándar ERC-20 y puede asignarse a una wallet con saldo.</p>
+                                <p>El listado en exchanges no es un requisito técnico. No estar listado solo significa que no se comercia públicamente, no tiene liquidez abierta y es una inversión privada y controlada.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-animate="fade-up" data-delay="0.1">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>03. &iquest;Dónde se guarda el token?</span>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>El token se guarda en una Smart Account dentro de la plataforma. Esta Smart Account es una wallet blockchain real, asociada al usuario, gestionada mediante Account Abstraction y capaz de recibir, custodiar y transferir tokens.</p>
+                                <p>Desde el punto de vista técnico, el token está en blockchain. Desde el punto de vista del usuario, está en su cuenta dentro de la plataforma.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-animate="fade-up" data-delay="0.15">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>04. &iquest;Qué derechos otorga el token?</span>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>El token otorga participación en un desarrollo inmobiliario, derecho a rendimientos fijos anuales y acceso a reportes o beneficios del proyecto según condiciones.</p>
+                                <p>El token no está diseñado para especulación, sino para representar una inversión estructurada.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-animate="fade-up" data-delay="0.2">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>05. &iquest;Cómo se generan y pagan los rendimientos?</span>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Se utiliza un modelo Off-chain: el token representa el derecho económico, los rendimientos se calculan fuera de blockchain y los pagos se realizan periódicamente en stablecoins.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-animate="fade-up" data-delay="0.25">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>06. &iquest;Existen restricciones de transferencia?</span>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Este tipo de token incluye restricciones por diseño: transferencias solo entre wallets verificadas, reglas de KYC/AML y posibles bloqueos o pausas de transferencia.</p>
+                                <p>Estas restricciones no eliminan su naturaleza ERC-20, solo aseguran cumplimiento legal.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-animate="fade-up" data-delay="0.3">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>07. &iquest;Por qué no está listado en exchanges?</span>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No está listado porque representa una inversión privada, tiene rendimientos fijos, está respaldado por un activo real y debe cumplir regulaciones. Listarlo lo acercaría a mercados secundarios públicos, lo cual no es el objetivo del producto.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-animate="fade-up" data-delay="0.35">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>08. Definición resumida para el usuario</span>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Es un token digital en blockchain (Polygon) que representa tu inversión en un desarrollo inmobiliario. Se guarda en tu wallet dentro de la plataforma y te otorga rendimientos fijos anuales. No está listado porque es una inversión privada, no un token de trading.</p>
+                                <div class="token-classification">
+                                    <span>Token ERC-20 privado</span>
+                                    <span>Asset-backed token</span>
+                                    <span>Token de participación con rendimiento fijo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-cta" data-animate="fade-up">
+                        <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-primary magnetic">Comprar Tokens</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: EDUCACIÓN FINANCIERA -->
+    <section class="section section-education" id="education">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-label">
+                    <span class="label-number">08</span>
+                    <span class="label-text">Educación</span>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title" data-animate="reveal-text">Educación financiera y activos reales</h2>
+                    <p class="section-text" data-animate="fade-up">Infiniti Group impulsa la educación financiera como herramienta para comprender cómo funcionan los activos del mundo real y las nuevas tecnologías que los conectan con la infraestructura digital.</p>
+                    <div class="education-topics" data-animate="fade-up">
+                        <div class="edu-topic">Activos reales</div>
+                        <div class="edu-topic">Tokenización</div>
+                        <div class="edu-topic">Blockchain</div>
+                        <div class="edu-topic">Economía digital</div>
+                        <div class="edu-topic">Nuevas formas de participación</div>
+                    </div>
+                    <p class="section-text section-text-muted" data-animate="fade-up">Nuestro objetivo es acercar conocimiento claro y accesible para comprender cómo evoluciona la relación entre tecnología y economía global.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: PRESENCIA GLOBAL -->
+    <section class="section section-global" id="global">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-label">
+                    <span class="label-number">09</span>
+                    <span class="label-text">Global</span>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title" data-animate="reveal-text">Presencia Global</h2>
+                    <p class="section-text" data-animate="fade-up">Nuestros desarrollos se encuentran en ubicaciones estratégicas donde convergen turismo, salud, hospitalidad y crecimiento urbano.</p>
+                    <div class="global-map" data-animate="fade-up">
+                        <svg class="world-map" viewBox="0 0 1000 500" fill="none">
+                            <path class="map-outline" d="M150,180 Q200,120 280,140 Q320,100 380,120 Q420,90 460,110 Q500,80 540,100 Q580,90 620,110 L640,120 Q660,110 680,120 Q720,100 760,130 Q800,120 840,150 L850,160 Q860,170 850,190 Q840,210 820,220 Q800,240 780,250 Q760,260 740,280 Q720,300 700,310 Q680,320 660,310 Q640,300 620,310 Q600,320 580,310 Q560,300 540,310 Q520,320 500,330 Q480,340 460,330 Q440,320 420,330 Q400,340 380,330 Q360,320 340,330 Q320,340 300,330 Q280,320 260,310 Q240,300 220,290 Q200,280 180,260 Q160,240 150,220 Z" stroke="rgba(199,167,108,0.2)" stroke-width="0.5"/>
+                            <path class="map-continent" d="M100,100 Q120,80 160,90 Q200,70 240,80 Q260,70 280,90 Q300,80 320,100 Q310,120 300,140 Q280,160 260,170 Q240,180 220,190 Q200,200 180,210 Q160,220 140,200 Q120,180 110,160 Q100,140 100,120 Z" fill="rgba(199,167,108,0.08)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <path class="map-continent" d="M220,220 Q240,210 260,220 Q280,230 290,250 Q300,270 290,290 Q280,320 270,340 Q260,360 250,370 Q240,380 230,370 Q220,360 215,340 Q210,320 210,300 Q210,280 210,260 Q210,240 220,220 Z" fill="rgba(199,167,108,0.08)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <path class="map-continent" d="M420,80 Q440,70 460,80 Q480,70 500,80 Q520,90 530,100 Q540,110 535,130 Q530,150 520,170 Q510,190 500,200 Q490,210 480,200 Q470,190 460,200 Q450,220 440,240 Q430,260 425,280 Q420,300 415,320 Q410,340 420,330 Q430,320 440,330 Q440,300 445,280 Q450,260 455,240 Q460,220 465,200 Q470,180 480,170 Q490,160 500,170 Q510,160 520,150 L530,130 Q535,110 530,100 Q520,90 510,85 Q500,80 490,85 Q480,90 470,85 Q460,80 450,85 Q440,90 430,85 Q420,80 420,80 Z" fill="rgba(199,167,108,0.08)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <path class="map-continent" d="M540,130 Q560,120 580,130 Q600,140 610,160 Q620,180 610,200 Q600,210 580,200 Q560,190 550,170 Q540,150 540,130 Z" fill="rgba(199,167,108,0.08)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <path class="map-continent" d="M580,80 Q620,60 660,70 Q700,60 740,80 Q780,70 820,90 Q840,100 850,120 Q860,140 850,160 Q840,180 820,190 Q800,200 780,190 Q760,180 740,190 Q720,200 700,190 Q680,180 660,190 Q640,200 620,190 Q600,180 590,160 Q580,140 580,120 Q580,100 580,80 Z" fill="rgba(199,167,108,0.08)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <path class="map-continent" d="M760,280 Q780,270 810,280 Q830,290 840,310 Q845,330 830,340 Q810,350 790,340 Q770,330 760,310 Q755,295 760,280 Z" fill="rgba(199,167,108,0.08)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <circle class="map-dot" cx="195" cy="185" r="4" fill="#C7A76C"/>
+                            <circle class="map-dot-pulse" cx="195" cy="185" r="4" fill="#C7A76C" opacity="0.4"/>
+                            <circle class="map-dot" cx="200" cy="178" r="4" fill="#C7A76C"/>
+                            <circle class="map-dot" cx="215" cy="175" r="4" fill="#C7A76C"/>
+                            <circle class="map-dot" cx="190" cy="175" r="4" fill="#C7A76C"/>
+                            <circle class="map-dot" cx="235" cy="160" r="4" fill="#C7A76C"/>
+                            <circle class="map-dot-pulse" cx="235" cy="160" r="4" fill="#C7A76C" opacity="0.4"/>
+                            <circle class="map-dot" cx="590" cy="165" r="4" fill="#C7A76C"/>
+                            <circle class="map-dot-pulse" cx="590" cy="165" r="4" fill="#C7A76C" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <div class="global-cities">
+                        <div class="city" data-animate="fade-up" data-delay="0"><span class="city-dot"></span><span>Ciudad de México</span></div>
+                        <div class="city" data-animate="fade-up" data-delay="0.05"><span class="city-dot"></span><span>Querétaro</span></div>
+                        <div class="city" data-animate="fade-up" data-delay="0.1"><span class="city-dot"></span><span>Mérida</span></div>
+                        <div class="city" data-animate="fade-up" data-delay="0.15"><span class="city-dot"></span><span>Zacatecas</span></div>
+                        <div class="city" data-animate="fade-up" data-delay="0.2"><span class="city-dot"></span><span>Dubái</span></div>
+                        <div class="city" data-animate="fade-up" data-delay="0.25"><span class="city-dot"></span><span>Florida</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: CONTACTO -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-up">
+                    <span class="label-number">10</span>
+                    <h2 class="section-title">Contacto corporativo</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Empresa</span>
+                            <span class="contact-value">Infiniti Group</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Ubicación</span>
+                            <span class="contact-value">Ciudad de México</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:contacto@infinitigroup.com.mx" class="contact-value contact-link">contacto@infinitigroup.com.mx</a>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener" class="btn-primary magnetic">Acceder a la plataforma</a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate="fade-up" data-delay="0.2">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Asunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full magnetic">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">INFINITI GROUP</span>
+                    <p>Real Assets. Global Vision.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">Nosotros</a>
+                    <a href="#developments">Desarrollos</a>
+                    <a href="#blockchain">Blockchain</a>
+                    <a href="https://www.infinitylegacy.app" target="_blank" rel="noopener">Plataforma</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Infiniti Group. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
