@@ -133,13 +133,13 @@ img {
 }
 
 .loader-logo {
-    font-family: var(--font-serif);
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 0.4em;
-    color: var(--color-text);
     margin-bottom: 32px;
     animation: loaderPulse 1.5s ease-in-out infinite;
+}
+
+.loader-logo-img {
+    height: 80px;
+    width: auto;
 }
 
 @keyframes loaderPulse {
@@ -195,16 +195,18 @@ img {
 }
 
 .nav-logo {
-    font-family: var(--font-serif);
-    font-size: 1.25rem;
-    font-weight: 500;
-    letter-spacing: 0.25em;
-    color: var(--color-text);
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 
-.nav-logo:hover {
-    color: var(--color-gold);
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.nav-logo:hover .nav-logo-img {
+    opacity: 0.8;
 }
 
 .nav-menu {
@@ -349,6 +351,15 @@ img {
     transform: translateY(20px);
 }
 
+.hero-logo {
+    width: clamp(280px, 45vw, 520px);
+    height: auto;
+    margin-bottom: 32px;
+    opacity: 0;
+    transform: translateY(20px);
+    filter: drop-shadow(0 4px 30px rgba(199, 167, 108, 0.15));
+}
+
 .hero-title {
     font-family: var(--font-serif);
     font-size: clamp(3rem, 8vw, 6.5rem);
@@ -364,6 +375,19 @@ img {
     display: inline-block;
     opacity: 0;
     transform: translateY(100%);
+}
+
+/* Screen reader only - for accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .hero-subtitle {
@@ -1270,18 +1294,32 @@ img {
 
 .global-map {
     margin: 48px 0;
-    padding: 40px;
-    background: var(--color-bg-card);
-    border: 1px solid var(--color-border-light);
+    padding: 48px;
+    background: linear-gradient(135deg, var(--color-bg-card) 0%, rgba(22, 22, 22, 0.8) 50%, var(--color-bg-card) 100%);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.global-map::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(199, 167, 108, 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 40%, rgba(199, 167, 108, 0.04) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .world-map {
     width: 100%;
-    max-height: 350px;
+    max-height: 400px;
+    filter: drop-shadow(0 0 20px rgba(199, 167, 108, 0.1));
 }
 
 .map-dot {
-    filter: drop-shadow(0 0 6px rgba(199, 167, 108, 0.6));
+    filter: drop-shadow(0 0 8px rgba(199, 167, 108, 0.8)) drop-shadow(0 0 20px rgba(199, 167, 108, 0.4));
+    transition: r 0.3s ease;
 }
 
 .map-dot-pulse {
@@ -1289,8 +1327,24 @@ img {
 }
 
 @keyframes dotPulse {
-    0%, 100% { r: 4; opacity: 0.4; }
-    50% { r: 10; opacity: 0; }
+    0%, 100% { r: 4; opacity: 0.6; }
+    50% { r: 14; opacity: 0; }
+}
+
+.map-label {
+    font-size: 10px;
+    fill: var(--color-gold);
+    font-family: var(--font-sans);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.map-connection {
+    stroke: rgba(199, 167, 108, 0.15);
+    stroke-width: 0.5;
+    stroke-dasharray: 4 4;
+    fill: none;
 }
 
 .global-cities {
@@ -1466,11 +1520,12 @@ img {
 }
 
 .footer-logo {
-    font-family: var(--font-serif);
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    color: var(--color-text);
+    display: inline-block;
+}
+
+.footer-logo-img {
+    height: 50px;
+    width: auto;
 }
 
 .footer-brand p {
@@ -1617,6 +1672,10 @@ img {
 }
 
 @media (max-width: 480px) {
+    .hero-logo {
+        width: 240px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -1630,6 +1689,11 @@ img {
         font-size: 0.75rem;
     }
 
+    .btn-outline {
+        font-size: 0.65rem;
+        padding: 10px 20px;
+    }
+
     .dev-locations span,
     .dev-features span {
         font-size: 0.65rem;
@@ -1638,5 +1702,17 @@ img {
 
     .dev-card-image {
         min-height: 240px;
+    }
+
+    .nav-logo-img {
+        height: 32px;
+    }
+
+    .loader-logo-img {
+        height: 60px;
+    }
+
+    .footer-logo-img {
+        height: 40px;
     }
 }

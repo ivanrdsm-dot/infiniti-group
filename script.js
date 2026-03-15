@@ -101,30 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const hero = document.querySelector('.hero');
         hero.classList.add('visible');
 
-        // Split text animation for hero title
-        const heroTitle = document.querySelector('.hero-title[data-animate="split-text"]');
-        if (heroTitle) {
-            const text = heroTitle.textContent;
-            heroTitle.innerHTML = '';
-            text.split('').forEach((char, i) => {
-                const span = document.createElement('span');
-                span.classList.add('char');
-                span.textContent = char === ' ' ? '\u00A0' : char;
-                span.style.transitionDelay = `${0.4 + i * 0.05}s`;
-                span.style.transition = `opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)`;
-                heroTitle.appendChild(span);
-            });
-
-            setTimeout(() => {
-                heroTitle.querySelectorAll('.char').forEach(c => {
-                    c.style.opacity = '1';
-                    c.style.transform = 'translateY(0)';
-                });
-            }, 100);
-        }
-
-        // Fade up hero elements
+        // Fade up hero elements with staggered timing
         const heroEyebrow = document.querySelector('.hero-eyebrow');
+        const heroLogo = document.querySelector('.hero-logo');
         const heroSubtitle = document.querySelector('.hero-subtitle');
         const heroCta = document.querySelector('.hero-content .btn-primary');
 
@@ -132,11 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (heroEyebrow) { heroEyebrow.style.transition = 'opacity 0.8s, transform 0.8s'; heroEyebrow.style.opacity = '1'; heroEyebrow.style.transform = 'translateY(0)'; }
         }, 300);
         setTimeout(() => {
+            if (heroLogo) { heroLogo.style.transition = 'opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1)'; heroLogo.style.opacity = '1'; heroLogo.style.transform = 'translateY(0)'; }
+        }, 500);
+        setTimeout(() => {
             if (heroSubtitle) { heroSubtitle.style.transition = 'opacity 0.8s, transform 0.8s'; heroSubtitle.style.opacity = '1'; heroSubtitle.style.transform = 'translateY(0)'; }
-        }, 800);
+        }, 900);
         setTimeout(() => {
             if (heroCta) { heroCta.style.transition = 'opacity 0.8s, transform 0.8s'; heroCta.style.opacity = '1'; heroCta.style.transform = 'translateY(0)'; }
-        }, 1100);
+        }, 1200);
     }
 
     // --- SCROLL REVEAL ANIMATIONS ---
