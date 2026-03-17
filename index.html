@@ -676,104 +676,118 @@
                     <h2 class="section-title" data-animate="reveal-text">Presencia Global</h2>
                     <p class="section-text" data-animate="fade-up">Nuestros desarrollos se encuentran en ubicaciones estratégicas donde convergen turismo, salud, hospitalidad y crecimiento urbano.</p>
                     <div class="global-map" data-animate="fade-up">
-                        <svg class="world-map" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="world-map" viewBox="0 0 1000 560" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <defs>
-                                <radialGradient id="mapGlow" cx="50%" cy="50%" r="55%">
-                                    <stop offset="0%" stop-color="rgba(199,167,108,0.04)"/>
+                                <radialGradient id="mapGlow" cx="45%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="rgba(199,167,108,0.06)"/>
                                     <stop offset="100%" stop-color="transparent"/>
                                 </radialGradient>
                                 <radialGradient id="dotGlow">
-                                    <stop offset="0%" stop-color="#C7A76C" stop-opacity="0.6"/>
+                                    <stop offset="0%" stop-color="#C7A76C" stop-opacity="0.5"/>
                                     <stop offset="100%" stop-color="#C7A76C" stop-opacity="0"/>
                                 </radialGradient>
                                 <filter id="glow">
-                                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                                    <feGaussianBlur stdDeviation="2.5" result="blur"/>
                                     <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
                                 </filter>
+                                <linearGradient id="connGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#C7A76C" stop-opacity="0.4"/>
+                                    <stop offset="100%" stop-color="#C7A76C" stop-opacity="0.08"/>
+                                </linearGradient>
                             </defs>
 
-                            <!-- Background glow -->
-                            <rect width="1200" height="600" fill="url(#mapGlow)"/>
+                            <rect width="1000" height="560" fill="url(#mapGlow)"/>
 
-                            <!-- Subtle grid lines -->
-                            <line x1="0" y1="150" x2="1200" y2="150" class="map-grid-line"/>
-                            <line x1="0" y1="300" x2="1200" y2="300" class="map-grid-line"/>
-                            <line x1="0" y1="450" x2="1200" y2="450" class="map-grid-line"/>
-                            <line x1="300" y1="0" x2="300" y2="600" class="map-grid-line"/>
-                            <line x1="600" y1="0" x2="600" y2="600" class="map-grid-line"/>
-                            <line x1="900" y1="0" x2="900" y2="600" class="map-grid-line"/>
+                            <!-- ========== MEXICO MAP (main focus) ========== -->
+                            <!-- Simplified Mexico outline -->
+                            <path d="M80,155 L105,140 L140,130 L175,120 L210,105 L250,95 L295,88 L340,82 L380,80 L420,82 L460,88 L500,95 L530,102 L555,110 L575,120 L590,132 L600,148 L605,165 L600,182 L590,195 L575,210 L555,222 L540,235 L530,248 L525,262 L530,278 L540,290 L548,305 L550,322 L545,338 L535,352 L522,362 L505,370 L485,375 L465,378 L445,380 L430,385 L418,395 L408,408 L400,420 L388,428 L372,432 L355,428 L340,420 L328,410 L318,398 L310,385 L298,375 L282,370 L265,368 L248,372 L235,380 L222,390 L210,395 L195,392 L182,385 L170,375 L160,362 L148,350 L138,338 L125,328 L112,320 L98,315 L85,308 L75,298 L68,285 L65,270 L68,252 L72,238 L78,222 L82,208 L80,192 L78,175 L78,162 Z"
+                                  fill="rgba(199,167,108,0.08)" stroke="rgba(199,167,108,0.25)" stroke-width="1"/>
 
-                            <!-- North America -->
-                            <path class="map-continent" d="M80,80 L120,60 L170,55 L220,65 L260,50 L310,55 L340,70 L350,90 L340,110 L325,125 L310,140 L295,145 L285,160 L270,175 L260,190 L250,200 L240,210 L235,225 L245,235 L260,240 L265,250 L255,260 L240,265 L230,255 L220,250 L210,260 L195,265 L180,260 L170,250 L160,235 L150,240 L135,235 L120,220 L105,210 L95,195 L85,180 L80,165 L75,145 L70,125 L72,105 L75,90 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <!-- Baja California -->
+                            <path d="M42,120 L55,108 L68,100 L78,105 L80,118 L78,135 L72,155 L65,175 L58,198 L52,220 L48,242 L45,258 L42,268 L38,255 L35,238 L33,218 L32,198 L33,178 L35,158 L38,138 Z"
+                                  fill="rgba(199,167,108,0.06)" stroke="rgba(199,167,108,0.2)" stroke-width="0.8"/>
 
-                            <!-- Central America & Mexico detail -->
-                            <path class="map-continent" d="M180,260 L195,265 L210,270 L215,280 L220,290 L215,300 L205,305 L195,300 L185,290 L180,275 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <!-- Yucatan Peninsula detail -->
+                            <path d="M530,248 L545,242 L565,238 L582,238 L598,242 L610,250 L615,262 L612,275 L602,288 L588,295 L572,298 L558,295 L545,290 L535,280 L530,265 Z"
+                                  fill="rgba(199,167,108,0.1)" stroke="rgba(199,167,108,0.28)" stroke-width="1"/>
 
-                            <!-- South America -->
-                            <path class="map-continent" d="M230,310 L250,300 L270,305 L290,315 L305,330 L315,350 L320,375 L315,400 L305,425 L290,445 L275,460 L260,470 L250,475 L240,465 L235,450 L230,430 L225,410 L220,390 L218,370 L215,350 L218,330 L225,315 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <!-- State borders (subtle) -->
+                            <!-- Zacatecas region -->
+                            <path d="M280,185 L320,175 L345,190 L335,215 L300,225 L275,210 Z" fill="rgba(199,167,108,0.04)" stroke="rgba(199,167,108,0.12)" stroke-width="0.5"/>
+                            <!-- Querétaro region -->
+                            <path d="M370,225 L400,218 L418,235 L408,258 L385,262 L368,248 Z" fill="rgba(199,167,108,0.04)" stroke="rgba(199,167,108,0.12)" stroke-width="0.5"/>
+                            <!-- CDMX region -->
+                            <path d="M405,270 L430,262 L448,278 L440,300 L418,305 L402,290 Z" fill="rgba(199,167,108,0.04)" stroke="rgba(199,167,108,0.12)" stroke-width="0.5"/>
+                            <!-- Oaxaca region -->
+                            <path d="M415,340 L450,330 L478,345 L475,368 L448,378 L420,368 Z" fill="rgba(199,167,108,0.04)" stroke="rgba(199,167,108,0.12)" stroke-width="0.5"/>
 
-                            <!-- Europe -->
-                            <path class="map-continent" d="M520,70 L545,60 L570,65 L595,60 L620,70 L635,80 L640,95 L635,110 L625,120 L615,130 L600,135 L585,140 L570,138 L555,130 L540,125 L530,115 L520,105 L515,90 L518,80 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
+                            <!-- Glow areas on active states -->
+                            <circle cx="305" cy="200" r="35" fill="url(#dotGlow)" opacity="0.25"/>
+                            <circle cx="390" cy="240" r="30" fill="url(#dotGlow)" opacity="0.25"/>
+                            <circle cx="425" cy="282" r="35" fill="url(#dotGlow)" opacity="0.3"/>
+                            <circle cx="575" cy="262" r="35" fill="url(#dotGlow)" opacity="0.3"/>
+                            <circle cx="448" cy="355" r="30" fill="url(#dotGlow)" opacity="0.2"/>
 
-                            <!-- Africa -->
-                            <path class="map-continent" d="M540,175 L560,165 L585,160 L610,165 L630,175 L645,190 L655,210 L660,235 L658,260 L650,290 L640,320 L625,345 L608,365 L590,375 L575,370 L560,355 L548,335 L540,310 L535,285 L530,260 L528,235 L530,210 L535,190 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
-
-                            <!-- Asia / Middle East -->
-                            <path class="map-continent" d="M640,60 L680,50 L730,55 L780,50 L830,55 L880,60 L930,70 L970,80 L1000,95 L1020,110 L1030,130 L1025,150 L1015,170 L1000,185 L980,195 L955,200 L930,195 L905,185 L880,180 L855,185 L830,190 L805,195 L780,190 L755,180 L730,175 L710,165 L695,155 L680,145 L665,135 L650,120 L640,100 L638,80 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
-
-                            <!-- Southeast Asia -->
-                            <path class="map-continent" d="M900,200 L925,195 L950,205 L965,220 L970,240 L960,255 L945,260 L930,255 L915,245 L905,230 L900,215 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
-
-                            <!-- Australia -->
-                            <path class="map-continent" d="M920,340 L950,330 L985,335 L1015,345 L1035,360 L1040,380 L1030,400 L1010,415 L985,420 L960,415 L940,405 L925,390 L918,370 L915,355 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
-
-                            <!-- Japan/Korea -->
-                            <path class="map-continent" d="M1005,100 L1015,95 L1030,100 L1038,115 L1035,130 L1025,140 L1012,138 L1005,125 L1002,110 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
-
-                            <!-- UK/Ireland -->
-                            <path class="map-continent" d="M505,75 L515,68 L522,75 L520,88 L512,95 L505,88 Z" fill="rgba(199,167,108,0.07)" stroke="rgba(199,167,108,0.15)" stroke-width="0.5"/>
-
-                            <!-- Connection lines -->
-                            <path class="map-connection map-connection-animated" d="M215,245 C350,140 550,130 720,195"/>
-                            <path class="map-connection map-connection-animated" d="M215,245 C220,220 240,195 265,210" style="animation-delay: -5s"/>
-                            <path class="map-connection map-connection-animated" d="M215,245 C230,220 250,210 265,210" style="animation-delay: -10s"/>
-
-                            <!-- Glow areas around active regions -->
-                            <circle cx="215" cy="245" r="40" fill="url(#dotGlow)" opacity="0.3"/>
-                            <circle cx="720" cy="195" r="30" fill="url(#dotGlow)" opacity="0.2"/>
-                            <circle cx="265" cy="210" r="25" fill="url(#dotGlow)" opacity="0.2"/>
-
-                            <!-- === LOCATION MARKERS === -->
-
-                            <!-- CDMX -->
-                            <circle class="map-dot-pulse" cx="210" cy="248" r="5" fill="#C7A76C" opacity="0.4"/>
-                            <circle class="map-dot" cx="210" cy="248" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
-                            <text class="map-label" x="210" y="270" text-anchor="middle">CDMX</text>
-
-                            <!-- Querétaro -->
-                            <circle class="map-dot" cx="200" cy="240" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
-                            <text class="map-label" x="175" y="235" text-anchor="end">Querétaro</text>
-
-                            <!-- Mérida -->
-                            <circle class="map-dot-pulse" cx="230" cy="242" r="5" fill="#C7A76C" opacity="0.4"/>
-                            <circle class="map-dot" cx="230" cy="242" r="4" fill="#C7A76C" filter="url(#glow)"/>
-                            <text class="map-label" x="245" y="238">Mérida</text>
+                            <!-- ===== LOCATION MARKERS ===== -->
 
                             <!-- Zacatecas -->
-                            <circle class="map-dot" cx="198" cy="234" r="3" fill="#C7A76C" filter="url(#glow)"/>
+                            <circle class="map-dot-pulse" cx="305" cy="200" r="5" fill="#C7A76C" opacity="0.4"/>
+                            <circle class="map-dot" cx="305" cy="200" r="5" fill="#C7A76C" filter="url(#glow)"/>
+                            <text class="map-label" x="305" y="186" text-anchor="middle">Zacatecas</text>
+
+                            <!-- Querétaro -->
+                            <circle class="map-dot-pulse" cx="390" cy="240" r="5" fill="#C7A76C" opacity="0.4"/>
+                            <circle class="map-dot" cx="390" cy="240" r="5" fill="#C7A76C" filter="url(#glow)"/>
+                            <text class="map-label" x="390" y="226" text-anchor="middle">Querétaro</text>
+
+                            <!-- CDMX -->
+                            <circle class="map-dot-pulse" cx="425" cy="282" r="6" fill="#C7A76C" opacity="0.4"/>
+                            <circle class="map-dot" cx="425" cy="282" r="6" fill="#C7A76C" filter="url(#glow)"/>
+                            <text class="map-label" x="425" y="302" text-anchor="middle">CDMX</text>
+
+                            <!-- Mérida / Yucatán -->
+                            <circle class="map-dot-pulse" cx="575" cy="262" r="6" fill="#C7A76C" opacity="0.4"/>
+                            <circle class="map-dot" cx="575" cy="262" r="6" fill="#C7A76C" filter="url(#glow)"/>
+                            <text class="map-label" x="575" y="252" text-anchor="middle">Mérida</text>
 
                             <!-- Oaxaca -->
-                            <circle class="map-dot" cx="215" cy="255" r="3" fill="#C7A76C" filter="url(#glow)"/>
+                            <circle class="map-dot-pulse" cx="448" cy="355" r="5" fill="#C7A76C" opacity="0.4"/>
+                            <circle class="map-dot" cx="448" cy="355" r="5" fill="#C7A76C" filter="url(#glow)"/>
+                            <text class="map-label" x="448" y="375" text-anchor="middle">Oaxaca</text>
 
-                            <!-- Florida -->
-                            <circle class="map-dot-pulse" cx="265" cy="210" r="5" fill="#C7A76C" opacity="0.4"/>
-                            <circle class="map-dot" cx="265" cy="210" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
-                            <text class="map-label" x="280" y="205">Florida</text>
+                            <!-- ===== INTERNATIONAL CONNECTIONS ===== -->
 
-                            <!-- Dubái -->
-                            <circle class="map-dot-pulse" cx="720" cy="195" r="6" fill="#C7A76C" opacity="0.4"/>
-                            <circle class="map-dot" cx="720" cy="195" r="5" fill="#C7A76C" filter="url(#glow)"/>
-                            <text class="map-label" x="738" y="192">Dubái</text>
+                            <!-- Connection to Florida -->
+                            <path class="map-connection map-connection-animated" d="M575,252 C620,180 700,120 820,95" stroke="url(#connGrad)" stroke-width="1"/>
+                            <!-- Florida marker -->
+                            <circle class="map-dot-pulse" cx="820" cy="95" r="5" fill="#C7A76C" opacity="0.35"/>
+                            <circle class="map-dot" cx="820" cy="95" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
+                            <text class="map-label" x="838" y="92">Florida, USA</text>
+                            <!-- Small US shape hint -->
+                            <path d="M720,50 L760,42 L800,45 L835,55 L860,70 L870,88 L862,105 L845,115 L825,118 L808,112 L795,105" fill="none" stroke="rgba(199,167,108,0.1)" stroke-width="0.5"/>
+
+                            <!-- Connection to Dubai -->
+                            <path class="map-connection map-connection-animated" d="M425,282 C500,200 650,100 920,148" stroke="url(#connGrad)" stroke-width="1" style="animation-delay: -8s"/>
+                            <!-- Dubai marker -->
+                            <circle class="map-dot-pulse" cx="920" cy="148" r="5" fill="#C7A76C" opacity="0.35"/>
+                            <circle class="map-dot" cx="920" cy="148" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
+                            <text class="map-label" x="938" y="145">Dubái, UAE</text>
+                            <!-- Small Arabian Peninsula hint -->
+                            <path d="M895,130 L910,125 L928,130 L940,142 L942,158 L935,170 L920,175 L905,168 L898,155 L895,140 Z" fill="none" stroke="rgba(199,167,108,0.1)" stroke-width="0.5"/>
+
+                            <!-- Connection lines between Mexican cities -->
+                            <line x1="305" y1="200" x2="390" y2="240" stroke="rgba(199,167,108,0.12)" stroke-width="0.5" stroke-dasharray="3 3"/>
+                            <line x1="390" y1="240" x2="425" y2="282" stroke="rgba(199,167,108,0.12)" stroke-width="0.5" stroke-dasharray="3 3"/>
+                            <line x1="425" y1="282" x2="575" y2="262" stroke="rgba(199,167,108,0.12)" stroke-width="0.5" stroke-dasharray="3 3"/>
+                            <line x1="425" y1="282" x2="448" y2="355" stroke="rgba(199,167,108,0.12)" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+                            <!-- Compass / Scale indicator -->
+                            <g transform="translate(60,480)" opacity="0.3">
+                                <line x1="0" y1="0" x2="0" y2="-20" stroke="#C7A76C" stroke-width="0.8"/>
+                                <line x1="-5" y1="-15" x2="0" y2="-20" stroke="#C7A76C" stroke-width="0.8"/>
+                                <line x1="5" y1="-15" x2="0" y2="-20" stroke="#C7A76C" stroke-width="0.8"/>
+                                <text x="8" y="-8" fill="#C7A76C" font-size="7" font-family="Inter, sans-serif" letter-spacing="0.1em">N</text>
+                            </g>
                         </svg>
                     </div>
                     <div class="global-cities">

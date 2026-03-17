@@ -203,7 +203,7 @@ img {
 }
 
 .nav-logo-img {
-    height: 55px;
+    height: 44px;
     width: auto;
     transition: opacity 0.3s ease;
 }
@@ -216,17 +216,18 @@ img {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
 }
 
 .nav-menu a {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 400;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-text-muted);
     transition: color 0.3s ease;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-menu a::after {
