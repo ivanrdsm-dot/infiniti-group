@@ -339,13 +339,14 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
     z-index: 0;
+    overflow: hidden;
 }
 
 .hero-bg-img {
@@ -396,7 +397,6 @@ img {
     opacity: 0;
     transform: translateY(20px);
     filter: drop-shadow(0 4px 30px rgba(199, 167, 108, 0.15));
-    padding-top: 10px;
 }
 
 .hero-title {
