@@ -1554,10 +1554,28 @@ img {
     transform: scale(1.5);
 }
 
-.city span:last-child {
+.city span:nth-child(2) {
     font-size: 0.88rem;
     color: var(--color-text-muted);
     letter-spacing: 0.05em;
+}
+
+.city-project {
+    font-size: 0.72rem;
+    color: var(--color-gold);
+    opacity: 0;
+    letter-spacing: 0.08em;
+    transition: opacity 0.3s ease;
+    margin-left: auto;
+}
+
+.city:hover .city-project {
+    opacity: 0.7;
+}
+
+a.city {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* --- CONTACT --- */

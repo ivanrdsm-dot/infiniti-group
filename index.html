@@ -961,62 +961,106 @@
 
 <!-- City markers -->
 <g class="map-markers">
-<circle cx="269.6" cy="334.2" r="35" fill="url(#dotGlowLarge)" opacity="0.5"/>
-<circle cx="269.6" cy="334.2" r="17.5" fill="url(#dotGlow)" opacity="0.6"/>
-<circle class="map-dot-ring" cx="269.6" cy="334.2" r="8" style="animation-delay: 1.1s"/>
-<circle class="map-dot-pulse" cx="269.6" cy="334.2" r="4.5" fill="#C7A76C" opacity="0.5"/>
-<circle class="map-dot" cx="269.6" cy="334.2" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
-<circle cx="269.6" cy="334.2" r="1.5" fill="#fff" opacity="0.9"/>
-<text class="map-label" x="269.6" y="352.2" text-anchor="middle">CDMX</text>
-<circle cx="265.4" cy="330.7" r="22" fill="url(#dotGlowLarge)" opacity="0.5"/>
-<circle cx="265.4" cy="330.7" r="11.0" fill="url(#dotGlow)" opacity="0.6"/>
-<circle class="map-dot-ring" cx="265.4" cy="330.7" r="8" style="animation-delay: 0.1s"/>
-<circle class="map-dot-pulse" cx="265.4" cy="330.7" r="3.5" fill="#C7A76C" opacity="0.5"/>
-<circle class="map-dot" cx="265.4" cy="330.7" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
-<text class="map-label" x="265.4" y="318.7" text-anchor="middle">Querétaro</text>
-<circle cx="258.1" cy="324.2" r="22" fill="url(#dotGlowLarge)" opacity="0.5"/>
-<circle cx="258.1" cy="324.2" r="11.0" fill="url(#dotGlow)" opacity="0.6"/>
-<circle class="map-dot-ring" cx="258.1" cy="324.2" r="8" style="animation-delay: 0.0s"/>
-<circle class="map-dot-pulse" cx="258.1" cy="324.2" r="3.5" fill="#C7A76C" opacity="0.5"/>
-<circle class="map-dot" cx="258.1" cy="324.2" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
-<text class="map-label" x="258.1" y="312.2" text-anchor="middle">Zacatecas</text>
-<circle cx="301.3" cy="329.6" r="22" fill="url(#dotGlowLarge)" opacity="0.5"/>
-<circle cx="301.3" cy="329.6" r="11.0" fill="url(#dotGlow)" opacity="0.6"/>
-<circle class="map-dot-ring" cx="301.3" cy="329.6" r="8" style="animation-delay: 0.6000000000000001s"/>
-<circle class="map-dot-pulse" cx="301.3" cy="329.6" r="3.5" fill="#C7A76C" opacity="0.5"/>
-<circle class="map-dot" cx="301.3" cy="329.6" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
-<text class="map-label" x="311.3" y="319.6">Mérida</text>
-<circle cx="277.6" cy="341.1" r="22" fill="url(#dotGlowLarge)" opacity="0.5"/>
-<circle cx="277.6" cy="341.1" r="11.0" fill="url(#dotGlow)" opacity="0.6"/>
-<circle class="map-dot-ring" cx="277.6" cy="341.1" r="8" style="animation-delay: 0.30000000000000004s"/>
-<circle class="map-dot-pulse" cx="277.6" cy="341.1" r="3.5" fill="#C7A76C" opacity="0.5"/>
-<circle class="map-dot" cx="277.6" cy="341.1" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
-<text class="map-label" x="277.6" y="359.1" text-anchor="middle">Oaxaca</text>
-<circle cx="332.7" cy="315.0" r="35" fill="url(#dotGlowLarge)" opacity="0.5"/>
-<circle cx="332.7" cy="315.0" r="17.5" fill="url(#dotGlow)" opacity="0.6"/>
-<circle class="map-dot-ring" cx="332.7" cy="315.0" r="8" style="animation-delay: 0.5s"/>
-<circle class="map-dot-pulse" cx="332.7" cy="315.0" r="4.5" fill="#C7A76C" opacity="0.5"/>
-<circle class="map-dot" cx="332.7" cy="315.0" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
-<circle cx="332.7" cy="315.0" r="1.5" fill="#fff" opacity="0.9"/>
-<text class="map-label" x="344.7" y="303.0">Florida, USA</text>
-<circle cx="784.2" cy="316.8" r="35" fill="url(#dotGlowLarge)" opacity="0.5"/>
-<circle cx="784.2" cy="316.8" r="17.5" fill="url(#dotGlow)" opacity="0.6"/>
-<circle class="map-dot-ring" cx="784.2" cy="316.8" r="8" style="animation-delay: 0.6000000000000001s"/>
-<circle class="map-dot-pulse" cx="784.2" cy="316.8" r="4.5" fill="#C7A76C" opacity="0.5"/>
-<circle class="map-dot" cx="784.2" cy="316.8" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
-<circle cx="784.2" cy="316.8" r="1.5" fill="#fff" opacity="0.9"/>
-<text class="map-label" x="796.2" y="304.8">Dubái, UAE</text>
+<style>
+    .map-city-link { cursor: pointer; }
+    .map-city-link:hover .map-dot { filter: drop-shadow(0 0 12px rgba(199,167,108,1)) drop-shadow(0 0 25px rgba(199,167,108,0.7)); }
+    .map-city-link:hover .map-label { fill: #C7A76C; }
+    .map-city-link:hover .map-callout { stroke: rgba(199,167,108,0.5); }
+    .map-callout { stroke: rgba(199,167,108,0.2); stroke-width: 0.6; fill: none; }
+    .map-label-bg { fill: rgba(10,10,10,0.7); rx: 2; }
+</style>
+
+<a href="#luxury-clinics" class="map-city-link">
+  <circle cx="269.6" cy="334.2" r="35" fill="url(#dotGlowLarge)" opacity="0.5"/>
+  <circle cx="269.6" cy="334.2" r="17.5" fill="url(#dotGlow)" opacity="0.6"/>
+  <circle class="map-dot-ring" cx="269.6" cy="334.2" r="8" style="animation-delay:1.5s"/>
+  <circle class="map-dot-pulse" cx="269.6" cy="334.2" r="4.5" fill="#C7A76C" opacity="0.5"/>
+  <circle class="map-dot" cx="269.6" cy="334.2" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
+  <circle cx="269.6" cy="334.2" r="1.5" fill="#fff" opacity="0.9"/>
+  <line class="map-callout" x1="269.6" y1="334.2" x2="199.60000000000002" y2="356.2"/>
+  <circle cx="199.60000000000002" cy="356.2" r="1.2" fill="rgba(199,167,108,0.3)"/>
+  <rect class="map-label-bg" x="185.60000000000002" y="346.2" width="30.0" height="14" rx="2"/>
+  <text class="map-label" x="189.60000000000002" y="356.2">CDMX</text>
+</a>
+
+<a href="#monte-vinum" class="map-city-link">
+  <circle cx="265.4" cy="330.7" r="22" fill="url(#dotGlowLarge)" opacity="0.5"/>
+  <circle cx="265.4" cy="330.7" r="11.0" fill="url(#dotGlow)" opacity="0.6"/>
+  <circle class="map-dot-ring" cx="265.4" cy="330.7" r="8" style="animation-delay:2.7s"/>
+  <circle class="map-dot-pulse" cx="265.4" cy="330.7" r="3.5" fill="#C7A76C" opacity="0.5"/>
+  <circle class="map-dot" cx="265.4" cy="330.7" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
+  <line class="map-callout" x1="265.4" y1="330.7" x2="197.89999999999998" y2="322.7"/>
+  <circle cx="197.89999999999998" cy="322.7" r="1.2" fill="rgba(199,167,108,0.3)"/>
+  <rect class="map-label-bg" x="171.39999999999998" y="312.7" width="57.5" height="14" rx="2"/>
+  <text class="map-label" x="175.39999999999998" y="322.7">Querétaro</text>
+</a>
+
+<a href="#hospital-real" class="map-city-link">
+  <circle cx="258.1" cy="324.2" r="22" fill="url(#dotGlowLarge)" opacity="0.5"/>
+  <circle cx="258.1" cy="324.2" r="11.0" fill="url(#dotGlow)" opacity="0.6"/>
+  <circle class="map-dot-ring" cx="258.1" cy="324.2" r="8" style="animation-delay:1.8s"/>
+  <circle class="map-dot-pulse" cx="258.1" cy="324.2" r="3.5" fill="#C7A76C" opacity="0.5"/>
+  <circle class="map-dot" cx="258.1" cy="324.2" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
+  <line class="map-callout" x1="258.1" y1="324.2" x2="200.60000000000002" y2="286.2"/>
+  <circle cx="200.60000000000002" cy="286.2" r="1.2" fill="rgba(199,167,108,0.3)"/>
+  <rect class="map-label-bg" x="174.10000000000002" y="276.2" width="57.5" height="14" rx="2"/>
+  <text class="map-label" x="178.10000000000002" y="286.2">Zacatecas</text>
+</a>
+
+<a href="#jungle-kukulkan" class="map-city-link">
+  <circle cx="301.3" cy="329.6" r="22" fill="url(#dotGlowLarge)" opacity="0.5"/>
+  <circle cx="301.3" cy="329.6" r="11.0" fill="url(#dotGlow)" opacity="0.6"/>
+  <circle class="map-dot-ring" cx="301.3" cy="329.6" r="8" style="animation-delay:2.1s"/>
+  <circle class="map-dot-pulse" cx="301.3" cy="329.6" r="3.5" fill="#C7A76C" opacity="0.5"/>
+  <circle class="map-dot" cx="301.3" cy="329.6" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
+  <line class="map-callout" x1="301.3" y1="329.6" x2="331.3" y2="297.6"/>
+  <circle cx="331.3" cy="297.6" r="1.2" fill="rgba(199,167,108,0.3)"/>
+  <rect class="map-label-bg" x="312.3" y="287.6" width="41.0" height="14" rx="2"/>
+  <text class="map-label" x="316.3" y="297.6">Mérida</text>
+</a>
+
+<a href="#townhouses-puerto" class="map-city-link">
+  <circle cx="277.6" cy="341.1" r="22" fill="url(#dotGlowLarge)" opacity="0.5"/>
+  <circle cx="277.6" cy="341.1" r="11.0" fill="url(#dotGlow)" opacity="0.6"/>
+  <circle class="map-dot-ring" cx="277.6" cy="341.1" r="8" style="animation-delay:0.45s"/>
+  <circle class="map-dot-pulse" cx="277.6" cy="341.1" r="3.5" fill="#C7A76C" opacity="0.5"/>
+  <circle class="map-dot" cx="277.6" cy="341.1" r="3.5" fill="#C7A76C" filter="url(#glow)"/>
+  <line class="map-callout" x1="277.6" y1="341.1" x2="217.60000000000002" y2="383.1"/>
+  <circle cx="217.60000000000002" cy="383.1" r="1.2" fill="rgba(199,167,108,0.3)"/>
+  <rect class="map-label-bg" x="198.60000000000002" y="373.1" width="41.0" height="14" rx="2"/>
+  <text class="map-label" x="202.60000000000002" y="383.1">Oaxaca</text>
+</a>
+
+<a href="#luxury-clinics" class="map-city-link">
+  <circle cx="332.7" cy="315.0" r="35" fill="url(#dotGlowLarge)" opacity="0.5"/>
+  <circle cx="332.7" cy="315.0" r="17.5" fill="url(#dotGlow)" opacity="0.6"/>
+  <circle class="map-dot-ring" cx="332.7" cy="315.0" r="8" style="animation-delay:2.1s"/>
+  <circle class="map-dot-pulse" cx="332.7" cy="315.0" r="4.5" fill="#C7A76C" opacity="0.5"/>
+  <circle class="map-dot" cx="332.7" cy="315.0" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
+  <circle cx="332.7" cy="315.0" r="1.5" fill="#fff" opacity="0.9"/>
+  <text class="map-label" x="346.7" y="301.0">Florida, USA</text>
+</a>
+
+<a href="#developments" class="map-city-link">
+  <circle cx="784.2" cy="316.8" r="35" fill="url(#dotGlowLarge)" opacity="0.5"/>
+  <circle cx="784.2" cy="316.8" r="17.5" fill="url(#dotGlow)" opacity="0.6"/>
+  <circle class="map-dot-ring" cx="784.2" cy="316.8" r="8" style="animation-delay:0.6s"/>
+  <circle class="map-dot-pulse" cx="784.2" cy="316.8" r="4.5" fill="#C7A76C" opacity="0.5"/>
+  <circle class="map-dot" cx="784.2" cy="316.8" r="4.5" fill="#C7A76C" filter="url(#glow)"/>
+  <circle cx="784.2" cy="316.8" r="1.5" fill="#fff" opacity="0.9"/>
+  <text class="map-label" x="798.2" y="302.8">Dubái, UAE</text>
+</a>
 </g>
 </svg>
                     </div>
                     <div class="global-cities">
-                        <div class="city" data-animate="fade-up" data-delay="0"><span class="city-dot"></span><span>Ciudad de México</span></div>
-                        <div class="city" data-animate="fade-up" data-delay="0.05"><span class="city-dot"></span><span>Querétaro</span></div>
-                        <div class="city" data-animate="fade-up" data-delay="0.1"><span class="city-dot"></span><span>Mérida</span></div>
-                        <div class="city" data-animate="fade-up" data-delay="0.15"><span class="city-dot"></span><span>Zacatecas</span></div>
-                        <div class="city" data-animate="fade-up" data-delay="0.2"><span class="city-dot"></span><span>Oaxaca</span></div>
-                        <div class="city" data-animate="fade-up" data-delay="0.25"><span class="city-dot"></span><span>Dubái</span></div>
-                        <div class="city" data-animate="fade-up" data-delay="0.3"><span class="city-dot"></span><span>Florida</span></div>
+                        <a href="#luxury-clinics" class="city" data-animate="fade-up" data-delay="0"><span class="city-dot"></span><span>Ciudad de México</span><span class="city-project">Luxury Clinics</span></a>
+                        <a href="#monte-vinum" class="city" data-animate="fade-up" data-delay="0.05"><span class="city-dot"></span><span>Querétaro</span><span class="city-project">Monte Vinum</span></a>
+                        <a href="#jungle-kukulkan" class="city" data-animate="fade-up" data-delay="0.1"><span class="city-dot"></span><span>Mérida</span><span class="city-project">The Jungle Kukulkán</span></a>
+                        <a href="#hospital-real" class="city" data-animate="fade-up" data-delay="0.15"><span class="city-dot"></span><span>Zacatecas</span><span class="city-project">Hospital Real de Ángeles</span></a>
+                        <a href="#townhouses-puerto" class="city" data-animate="fade-up" data-delay="0.2"><span class="city-dot"></span><span>Oaxaca</span><span class="city-project">Town Houses Puerto Ángel</span></a>
+                        <a href="#developments" class="city" data-animate="fade-up" data-delay="0.25"><span class="city-dot"></span><span>Dubái</span><span class="city-project">Azizi Venice</span></a>
+                        <a href="#luxury-clinics" class="city" data-animate="fade-up" data-delay="0.3"><span class="city-dot"></span><span>Florida</span><span class="city-project">Luxury Clinics</span></a>
                     </div>
                 </div>
             </div>
