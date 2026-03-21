@@ -1914,3 +1914,18 @@ a.city {
         font-size: 0.65rem;
     }
 }
+
+/* --- LEGAL DISCLAIMER --- */
+.section-legal {
+    background: var(--color-bg-alt);
+    border-top: 1px solid rgba(199, 167, 108, 0.15);
+    border-bottom: 1px solid rgba(199, 167, 108, 0.15);
+    padding: 4rem 0;
+}
+
+.section-legal .section-text {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    opacity: 0.7;
+}
