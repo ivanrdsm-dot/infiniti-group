@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loader.classList.add('hidden');
             document.body.classList.remove('loading');
             initHeroAnimations();
-        }, 2200);
+        }, 800);
     });
 
     // Fallback if load event already fired
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loader.classList.add('hidden');
             document.body.classList.remove('loading');
             initHeroAnimations();
-        }, 2200);
+        }, 800);
     }
 
     // --- CUSTOM CURSOR ---

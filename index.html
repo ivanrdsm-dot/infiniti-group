@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="images/HOSPITAL/EXTERIOR LEJOS.webp" type="image/webp">
+    <link rel="preload" as="image" href="images/logo-gold.webp" type="image/webp">
 </head>
 <body>
 
@@ -19,7 +21,7 @@
     <!-- LOADING SCREEN -->
     <div class="loader" id="loader">
         <div class="loader-content">
-            <div class="loader-logo"><img src="images/logo-gold.png" alt="Infiniti Group" class="loader-logo-img"></div>
+            <div class="loader-logo"><img src="images/logo-gold.webp" alt="Infiniti Group" class="loader-logo-img"></div>
             <div class="loader-bar"><div class="loader-progress"></div></div>
         </div>
     </div>
@@ -27,7 +29,7 @@
     <!-- NAVIGATION -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo"><img src="images/logo-white.png" alt="Infiniti Group" class="nav-logo-img"></a>
+            <a href="#hero" class="nav-logo"><img src="images/logo-white.webp" alt="Infiniti Group" class="nav-logo-img"></a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
                 <span></span>
                 <span></span>
@@ -55,12 +57,12 @@
     <!-- SECTION 1: HERO -->
     <section class="hero" id="hero">
         <div class="hero-bg">
-            <img src="images/HOSPITAL/EXTERIOR LEJOS.png" alt="Infiniti Group" class="hero-bg-img">
+            <img src="images/HOSPITAL/EXTERIOR LEJOS.webp" alt="Infiniti Group" class="hero-bg-img" fetchpriority="high" decoding="async">
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <p class="hero-eyebrow" data-animate="fade-up" data-delay="0.3">Real Assets. Global Vision.</p>
-            <img src="images/logo-gold.png" alt="Infiniti Group" class="hero-logo" data-animate="fade-up" data-delay="0.1">
+            <img src="images/logo-gold.webp" alt="Infiniti Group" class="hero-logo" data-animate="fade-up" data-delay="0.1">
             <h1 class="hero-title sr-only">Infiniti Group</h1>
             <p class="hero-subtitle" data-animate="fade-up" data-delay="0.8" data-i18n="hero_subtitle">Estructura empresarial diversificada: proyectos inmobiliarios, tecnología aplicada e infraestructura financiera.</p>
             <div class="hero-ctas" data-animate="fade-up" data-delay="1.1">
@@ -180,14 +182,14 @@
                 <div class="dev-card-image">
                     <div class="gallery" data-gallery="clinica">
                         <div class="gallery-track">
-                            <div class="gallery-slide active"><img src="images/CLINICA/EXTERIOR.png" alt="Luxury Clinics Exterior" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/CLINICA/RECEPCIÓN.png" alt="Recepción" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/CLINICA/SALA DE ESPERA.png" alt="Sala de Espera" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/CLINICA/CONSULTORIO.png" alt="Consultorio" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/CLINICA/TRATAMIENTO.png" alt="Tratamiento" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/CLINICA/PASILLO.png" alt="Pasillo" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/CLINICA/DOCTORA.png" alt="Doctora" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/CLINICA/MAQUINAS.png" alt="Equipamiento" loading="lazy"></div>
+                            <div class="gallery-slide active"><img src="images/CLINICA/EXTERIOR.webp" alt="Luxury Clinics Exterior" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/RECEPCIÓN.webp" alt="Recepción" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/SALA DE ESPERA.webp" alt="Sala de Espera" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/CONSULTORIO.webp" alt="Consultorio" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/TRATAMIENTO.webp" alt="Tratamiento" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/PASILLO.webp" alt="Pasillo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/DOCTORA.webp" alt="Doctora" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/CLINICA/MAQUINAS.webp" alt="Equipamiento" loading="lazy"></div>
                         </div>
                         <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
                         <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
@@ -214,16 +216,16 @@
                 <div class="dev-card-image">
                     <div class="gallery" data-gallery="kukulkan">
                         <div class="gallery-track">
-                            <div class="gallery-slide active"><img src="images/KUKULKAN/EXTERIOR.png" alt="The Jungle Kukulkán Exterior" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/GLAMPINGS AEREA.png" alt="Vista Aérea" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/RECEPCIÓN.png" alt="Recepción" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/HABITACIÓN.png" alt="Habitación" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/CAMA MATRIMONIAL.png" alt="Cama Matrimonial" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/SALA DE ESTAR.png" alt="Sala de Estar" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/JACUZZI.png" alt="Jacuzzi" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/BAÑO.png" alt="Baño" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/CAMINO.png" alt="Camino" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/KUKULKAN/DOS GLAMPINGS.png" alt="Dos Glampings" loading="lazy"></div>
+                            <div class="gallery-slide active"><img src="images/KUKULKAN/EXTERIOR.webp" alt="The Jungle Kukulkán Exterior" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/GLAMPINGS AEREA.webp" alt="Vista Aérea" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/RECEPCIÓN.webp" alt="Recepción" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/HABITACIÓN.webp" alt="Habitación" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/CAMA MATRIMONIAL.webp" alt="Cama Matrimonial" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/SALA DE ESTAR.webp" alt="Sala de Estar" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/JACUZZI.webp" alt="Jacuzzi" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/BAÑO.webp" alt="Baño" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/CAMINO.webp" alt="Camino" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/KUKULKAN/DOS GLAMPINGS.webp" alt="Dos Glampings" loading="lazy"></div>
                         </div>
                         <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
                         <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
@@ -249,16 +251,16 @@
                 <div class="dev-card-image">
                     <div class="gallery" data-gallery="hospital">
                         <div class="gallery-track">
-                            <div class="gallery-slide active"><img src="images/HOSPITAL/EXTERIOR.png" alt="Hospital Real de Ángeles" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/EXTERIOR LEJOS.png" alt="Vista Exterior" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/RECEPCIÓN.png" alt="Recepción" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/SALA DE ESPERA.png" alt="Sala de Espera" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/QUIROFANO.png" alt="Quirófano" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/HABITACIÓN.png" alt="Habitación" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/PEDIATRÍA.png" alt="Pediatría" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/DOCTORES.png" alt="Doctores" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/PASILLO-2.png" alt="Pasillo" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/HOSPITAL/PACIENTE.png" alt="Paciente" loading="lazy"></div>
+                            <div class="gallery-slide active"><img src="images/HOSPITAL/EXTERIOR.webp" alt="Hospital Real de Ángeles" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/EXTERIOR LEJOS.webp" alt="Vista Exterior" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/RECEPCIÓN.webp" alt="Recepción" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/SALA DE ESPERA.webp" alt="Sala de Espera" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/QUIROFANO.webp" alt="Quirófano" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/HABITACIÓN.webp" alt="Habitación" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/PEDIATRÍA.webp" alt="Pediatría" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/DOCTORES.webp" alt="Doctores" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/PASILLO-2.webp" alt="Pasillo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/HOSPITAL/PACIENTE.webp" alt="Paciente" loading="lazy"></div>
                         </div>
                         <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
                         <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
@@ -292,16 +294,16 @@
                 <div class="dev-card-image">
                     <div class="gallery" data-gallery="azizi">
                         <div class="gallery-track">
-                            <div class="gallery-slide active"><img src="images/azizi venice/EDIFICIO.png" alt="Azizi Venice Edificio" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/SALA.png" alt="Sala" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/COCINA.png" alt="Cocina" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/HABITACIÓN.png" alt="Habitación" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/BAÑO.png" alt="Baño" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/VESTIDOR.png" alt="Vestidor" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/GYM.png" alt="Gym" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/ALBERCA-2.png" alt="Alberca" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/SAUNA.png" alt="Sauna" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/azizi venice/MESA DE JUEGO.png" alt="Mesa de Juego" loading="lazy"></div>
+                            <div class="gallery-slide active"><img src="images/azizi venice/EDIFICIO.webp" alt="Azizi Venice Edificio" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/SALA.webp" alt="Sala" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/COCINA.webp" alt="Cocina" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/HABITACIÓN.webp" alt="Habitación" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/BAÑO.webp" alt="Baño" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/VESTIDOR.webp" alt="Vestidor" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/GYM.webp" alt="Gym" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/ALBERCA-2.webp" alt="Alberca" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/SAUNA.webp" alt="Sauna" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/azizi venice/MESA DE JUEGO.webp" alt="Mesa de Juego" loading="lazy"></div>
                         </div>
                         <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
                         <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
@@ -328,16 +330,16 @@
                 <div class="dev-card-image">
                     <div class="gallery" data-gallery="montevinum">
                         <div class="gallery-track">
-                            <div class="gallery-slide active"><img src="images/MONTE VINUM/ENTRADA.png" alt="MONTEVINUM Entrada" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/VIÑEDO.png" alt="Viñedo" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/VIÑEDO PASILLOS.png" alt="Viñedo Pasillos" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/ECOLOFTS.png" alt="Ecolofts" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/RESTAURANTE-BAR.png" alt="Restaurante Bar" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/ALBERCA.png" alt="Alberca" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/BODA.png" alt="Boda" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/VINO.png" alt="Vino" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/UVAS.png" alt="Uvas" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/MONTE VINUM/HUESPEDES.png" alt="Huéspedes" loading="lazy"></div>
+                            <div class="gallery-slide active"><img src="images/MONTE VINUM/ENTRADA.webp" alt="MONTEVINUM Entrada" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/VIÑEDO.webp" alt="Viñedo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/VIÑEDO PASILLOS.webp" alt="Viñedo Pasillos" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/ECOLOFTS.webp" alt="Ecolofts" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/RESTAURANTE-BAR.webp" alt="Restaurante Bar" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/ALBERCA.webp" alt="Alberca" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/BODA.webp" alt="Boda" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/VINO.webp" alt="Vino" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/UVAS.webp" alt="Uvas" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/MONTE VINUM/HUESPEDES.webp" alt="Huéspedes" loading="lazy"></div>
                         </div>
                         <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
                         <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
@@ -365,14 +367,14 @@
                 <div class="dev-card-image">
                     <div class="gallery" data-gallery="puerto">
                         <div class="gallery-track">
-                            <div class="gallery-slide active"><img src="images/town houses puerto angel/VISTA PANORAMICA.png" alt="Vista Panorámica" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/town houses puerto angel/VISTA FRONTAL.png" alt="Vista Frontal" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/town houses puerto angel/ENTRADA.png" alt="Entrada" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/town houses puerto angel/SALA.png" alt="Sala" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/town houses puerto angel/RECAMARA.png" alt="Recámara" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/town houses puerto angel/ALBERCA.png" alt="Alberca" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/town houses puerto angel/SPA.png" alt="Spa" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/town houses puerto angel/AMENIDADES.png" alt="Amenidades" loading="lazy"></div>
+                            <div class="gallery-slide active"><img src="images/town houses puerto angel/VISTA PANORAMICA.webp" alt="Vista Panorámica" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/VISTA FRONTAL.webp" alt="Vista Frontal" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/ENTRADA.webp" alt="Entrada" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/SALA.webp" alt="Sala" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/RECAMARA.webp" alt="Recámara" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/ALBERCA.webp" alt="Alberca" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/SPA.webp" alt="Spa" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/town houses puerto angel/AMENIDADES.webp" alt="Amenidades" loading="lazy"></div>
                         </div>
                         <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
                         <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
@@ -398,13 +400,13 @@
                 <div class="dev-card-image">
                     <div class="gallery" data-gallery="citrus">
                         <div class="gallery-track">
-                            <div class="gallery-slide active"><img src="images/citrus limone/ENTRADA.png" alt="Citrus Limones" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/citrus limone/CAMPO 2.png" alt="Campo" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/citrus limone/LIMÓN.png" alt="Limón" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/citrus limone/PASILLO.png" alt="Pasillo" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/citrus limone/CANASTAS.png" alt="Canastas" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/citrus limone/PERSONAS.png" alt="Personas" loading="lazy"></div>
-                            <div class="gallery-slide"><img src="images/citrus limone/CAMIÓN.png" alt="Camión" loading="lazy"></div>
+                            <div class="gallery-slide active"><img src="images/citrus limone/ENTRADA.webp" alt="Citrus Limones" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/CAMPO 2.webp" alt="Campo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/LIMÓN.webp" alt="Limón" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/PASILLO.webp" alt="Pasillo" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/CANASTAS.webp" alt="Canastas" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/PERSONAS.webp" alt="Personas" loading="lazy"></div>
+                            <div class="gallery-slide"><img src="images/citrus limone/CAMIÓN.webp" alt="Camión" loading="lazy"></div>
                         </div>
                         <button class="gallery-btn gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg></button>
                         <button class="gallery-btn gallery-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg></button>
@@ -1281,7 +1283,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="footer-logo"><img src="images/logo-white.png" alt="Infiniti Group" class="footer-logo-img"></span>
+                    <span class="footer-logo"><img src="images/logo-white.webp" alt="Infiniti Group" class="footer-logo-img"></span>
                     <p>Real Assets. Global Vision.</p>
                 </div>
                 <div class="footer-links">
