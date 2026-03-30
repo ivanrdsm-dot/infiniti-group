@@ -608,7 +608,7 @@ const translationMap = {
     legacy_card1_text: '.legacy-card:nth-child(1) p',
     legacy_card2_title: '.legacy-card:nth-child(3) h3',
     legacy_card2_text: '.legacy-card:nth-child(3) p',
-    legacy_disclaimer: '.legacy-disclaimer',
+    legacy_disclaimer: '.legacy-disclaimer-box p',
     legacy_cta1: '.legacy-cta .btn-primary',
     legacy_cta_wa: '.legacy-cta .btn-whatsapp',
 
