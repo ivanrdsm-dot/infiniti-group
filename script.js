@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const heroEyebrow = document.querySelector('.hero-eyebrow');
         const heroLogo = document.querySelector('.hero-logo');
         const heroSubtitle = document.querySelector('.hero-subtitle');
-        const heroCta = document.querySelector('.hero-content .btn-primary');
+        const heroCta = document.querySelector('.hero-ctas');
 
         setTimeout(() => {
             if (heroEyebrow) { heroEyebrow.style.transition = 'opacity 0.8s, transform 0.8s'; heroEyebrow.style.opacity = '1'; heroEyebrow.style.transform = 'translateY(0)'; }

@@ -185,6 +185,24 @@ const translations = {
         footer_terms: "Términos y condiciones",
         footer_legal: "© 2026 Infiniti Group. Todos los derechos reservados.",
 
+        // Legacy
+        legacy_badge: "Aliado Estratégico",
+        legacy_title_html: 'Infiniti Group no tokeniza.<br>Para eso existe <span class="legacy-highlight">Infiniti Legacy</span>.',
+        legacy_text: "Infiniti Legacy es el aliado comercial exclusivo de Infiniti Group para la tokenización de proyectos inmobiliarios. Es una entidad independiente que opera la infraestructura tecnológica necesaria para representar la participación en desarrollos reales mediante activos digitales en blockchain.",
+        legacy_card1_title: "Infiniti Group",
+        legacy_card1_text: "Desarrolla, comercializa y estructura proyectos inmobiliarios reales. Opera la visión empresarial y el portafolio de activos.",
+        legacy_card2_title: "Infiniti Legacy",
+        legacy_card2_text: "Opera la tokenización: infraestructura blockchain, Smart Accounts, tokens ERC-20 y la plataforma digital donde los participantes gestionan su posición.",
+        legacy_disclaimer: "Infiniti Group no realiza procesos de tokenización de forma directa. Toda la operación tecnológica de activos digitales es responsabilidad de Infiniti Legacy.",
+        legacy_cta1: "Conocer Infiniti Legacy",
+        legacy_cta_wa: "Cotizar por WhatsApp",
+
+        // Testimonials
+        testimonials_title: "Lo que dicen nuestros aliados",
+        testimonials_subtitle: "Experiencias reales de quienes participan en el ecosistema",
+        testimonials_cta_text: "¿Quieres saber más sobre cómo participar?",
+        testimonials_cta_btn: "Hablar con un asesor",
+
         // Legal
         legal_label: "Aviso Legal",
         legal_text: "AVISO LEGAL: Somos una sociedad mercantil constituida conforme a las leyes de los Estados Unidos Mexicanos. Nuestro objeto social comprende actividades comerciales, inmobiliarias y de prestación de servicios empresariales, dentro y fuera del territorio nacional. Las actividades que realizamos tienen carácter estrictamente comercial y corporativo. Infiniti Group no capta recursos del público, no administra inversiones de terceros, no ofrece rendimientos garantizados ni realiza actividades reservadas a instituciones financieras o entidades reguladas por autoridades financieras. Los servicios que se ofrecen se limitan a asesoría empresarial, estructuración comercial y acompañamiento estratégico."
@@ -371,6 +389,24 @@ const translations = {
         footer_privacy: "Privacy policy",
         footer_terms: "Terms and conditions",
         footer_legal: "© 2026 Infiniti Group. All rights reserved.",
+
+        // Legacy
+        legacy_badge: "Strategic Ally",
+        legacy_title_html: 'Infiniti Group does not tokenize.<br>That\'s what <span class="legacy-highlight">Infiniti Legacy</span> is for.',
+        legacy_text: "Infiniti Legacy is Infiniti Group's exclusive commercial ally for the tokenization of real estate projects. It is an independent entity that operates the technological infrastructure needed to represent participation in real developments through digital assets on blockchain.",
+        legacy_card1_title: "Infiniti Group",
+        legacy_card1_text: "Develops, commercializes and structures real estate projects. Operates the business vision and asset portfolio.",
+        legacy_card2_title: "Infiniti Legacy",
+        legacy_card2_text: "Operates tokenization: blockchain infrastructure, Smart Accounts, ERC-20 tokens and the digital platform where participants manage their position.",
+        legacy_disclaimer: "Infiniti Group does not perform tokenization processes directly. All technological operations of digital assets are the responsibility of Infiniti Legacy.",
+        legacy_cta1: "Learn about Infiniti Legacy",
+        legacy_cta_wa: "Quote via WhatsApp",
+
+        // Testimonials
+        testimonials_title: "What our allies say",
+        testimonials_subtitle: "Real experiences from ecosystem participants",
+        testimonials_cta_text: "Want to learn more about how to participate?",
+        testimonials_cta_btn: "Talk to an advisor",
 
         // Legal
         legal_label: "Legal Notice",
@@ -565,6 +601,23 @@ const translationMap = {
     contact_cta: '#contact .contact-cta .btn-primary',
     contact_submit: '#contactForm .btn-primary',
 
+    // Legacy
+    legacy_badge: '.legacy-badge',
+    legacy_text: '.legacy-text',
+    legacy_card1_title: '.legacy-card:nth-child(1) h3',
+    legacy_card1_text: '.legacy-card:nth-child(1) p',
+    legacy_card2_title: '.legacy-card:nth-child(3) h3',
+    legacy_card2_text: '.legacy-card:nth-child(3) p',
+    legacy_disclaimer: '.legacy-disclaimer',
+    legacy_cta1: '.legacy-cta .btn-primary',
+    legacy_cta_wa: '.legacy-cta .btn-whatsapp',
+
+    // Testimonials
+    testimonials_title: '#testimonials .section-title-large',
+    testimonials_subtitle: '#testimonials .section-subtitle',
+    testimonials_cta_text: '.testimonials-cta p',
+    testimonials_cta_btn: '.testimonials-cta .btn-whatsapp',
+
     // Legal
     legal_label: '#legal .label-text',
     legal_text: '#legal .section-content > .section-text',
@@ -622,6 +675,12 @@ function setLanguage(lang) {
                 el.textContent = translations[lang][key];
             }
         }
+    }
+
+    // Update legacy title (uses innerHTML)
+    const legacyTitle = document.querySelector('.legacy-title');
+    if (legacyTitle && translations[lang].legacy_title_html) {
+        legacyTitle.innerHTML = translations[lang].legacy_title_html;
     }
 
     // Update placeholders
