@@ -486,7 +486,7 @@ const translationMap = {
     dev_azizi_f4: '#azizi-venice .dev-features span:nth-child(4)',
     dev_azizi_f5: '#azizi-venice .dev-features span:nth-child(5)',
 
-    // Monte Vinum
+    // Montevinum
     dev_monte_tag: '#monte-vinum .dev-card-tag',
     dev_monte_p: '#monte-vinum .dev-card-content p',
     dev_monte_f1: '#monte-vinum .dev-features span:nth-child(1)',
